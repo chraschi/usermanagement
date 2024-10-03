@@ -7,7 +7,7 @@ import { SecurityGroup } from '../models/security-group.model';
   providedIn: 'root'
 })
 export class SecurityGroupService {
-  private apiUrl = 'http://localhost:5000/api/securitygroup';
+  private apiUrl = 'http://localhost:5200/api/securitygroup';
 
   constructor(private http: HttpClient) { }
 
