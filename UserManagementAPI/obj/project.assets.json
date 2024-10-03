@@ -3517,19 +3517,22 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Stefan\\source\\repos\\usermanagement\\usermanagement-backend\\UserManagementAPI\\UserManagementAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Stefan\\source\\repos\\usermanagement\\UserManagementAPI\\UserManagementAPI.csproj",
       "projectName": "UserManagementAPI",
-      "projectPath": "C:\\Users\\Stefan\\source\\repos\\usermanagement\\usermanagement-backend\\UserManagementAPI\\UserManagementAPI.csproj",
+      "projectPath": "C:\\Users\\Stefan\\source\\repos\\usermanagement\\UserManagementAPI\\UserManagementAPI.csproj",
       "packagesPath": "C:\\Users\\Stefan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Stefan\\source\\repos\\usermanagement\\usermanagement-backend\\UserManagementAPI\\obj\\",
+      "outputPath": "C:\\Users\\Stefan\\source\\repos\\usermanagement\\UserManagementAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Stefan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Stefan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

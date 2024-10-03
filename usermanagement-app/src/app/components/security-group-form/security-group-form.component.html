@@ -1,0 +1,11 @@
+<h2>{{ securityGroup.id ? 'Edit Security Group' : 'Create Security Group' }}</h2>
+<form (ngSubmit)="onSubmit()">
+  <label for="name">Name:</label>
+  <input type="text" id="name" [(ngModel)]="securityGroup.name" name="name" required>
+
+  <label for="permissions">Permissions:</label>
+  <input type="text" id="permissions" [(ngModel)]="securityGroup.permissions" name="permissions" placeholder="Comma separated permissions">
+
+  <button type="submit">{{ securityGroup.id ? 'Update' : 'Create' }}</button>
+</form>
+<a routerLink="/security-groups">Back to Security Group List</a>

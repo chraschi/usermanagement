@@ -1,0 +1,43 @@
+<h2>{{ userForm.get('id')?.value ? 'Edit User' : 'Create User' }}</h2>
+
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" formControlName="email">
+    <div *ngIf="userForm.get('email')?.invalid && userForm.get('email')?.touched">
+      Invalid email address.
+    </div>
+  </div>
+
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" formControlName="password">
+    <div *ngIf="userForm.get('password')?.errors?.['minlength']">
+      Password must be at least 8 characters.
+    </div>
+    <div *ngIf="userForm.get('password')?.errors?.['weakPassword']">
+      Password must contain uppercase, lowercase, number, and special character.
+    </div>
+  </div>
+
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" formControlName="name">
+  </div>
+
+  <div>
+    <label for="securityGroups">Security Groups:</label>
+    <input type="text" id="securityGroups" formControlName="securityGroups" placeholder="Comma separated group IDs">
+  </div>
+
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+</form>
+
+<div *ngIf="successMessage" class="success-message">
+  {{ successMessage }}
+</div>
+<div *ngIf="errorMessage" class="error-message">
+  {{ errorMessage }}
+</div>

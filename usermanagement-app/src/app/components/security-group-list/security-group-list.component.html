@@ -1,0 +1,21 @@
+<h2>Security Groups</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let group of securityGroups">
+      <td>{{ group.id }}</td>
+      <td>{{ group.name }}</td>
+      <td>
+        <button (click)="deleteSecurityGroup(group.id)">Delete</button>
+        <a [routerLink]="['/security-groups/edit', group.id]">Edit</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<a routerLink="/security-groups/new">Create New Security Group</a>
